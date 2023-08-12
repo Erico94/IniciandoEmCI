@@ -11,6 +11,7 @@ export default function Home() {
   const {user} = useContext(AuthContext);
   const [nomeUsuario, setNomeUsuario] = useState("");
 
+  
   const getPrefixo = () =>{
     const prefixo = user.email.split("@").shift();
     setNomeUsuario(prefixo);
